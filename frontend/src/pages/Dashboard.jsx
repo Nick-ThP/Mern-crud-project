@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
+import { getGoals, reset } from '../features/goals/goalSlice'
 import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
-import { getGoals, reset } from '../features/goals/goalSlice'
 
 const Dashboard = () => {
 
@@ -15,19 +15,19 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (isError) {
-      console.log(message)
+        console.log(message)
     }
     if (!user) {
-      navigate('/login')
+        navigate('/login')
     }
     dispatch(getGoals())
     return () => {
-      dispatch(reset())
+        dispatch(reset())
     }
   }, [user, navigate, isError, message, dispatch])
 
   if (isLoading) {
-    return <Spinner />
+      return <Spinner />
   }
 
   return (
