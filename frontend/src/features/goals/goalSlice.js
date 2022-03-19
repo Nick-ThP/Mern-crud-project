@@ -81,6 +81,9 @@ export const goalSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder
+
+            // Create 
+
             .addCase(createGoal.pending, (state) => {
                 state.isLoading = true
             })
@@ -94,6 +97,10 @@ export const goalSlice = createSlice({
                 state.isError = true
                 state.message = action.payload
             })
+
+            // Read
+
+
             .addCase(getGoals.pending, (state) => {
                 state.isLoading = true
             })
@@ -107,6 +114,9 @@ export const goalSlice = createSlice({
                 state.isError = true
                 state.message = action.payload
             })
+
+            // Update
+
             .addCase(updateGoal.pending, (state) => {
                 state.isLoading = true;
             })
@@ -122,6 +132,9 @@ export const goalSlice = createSlice({
                 state.isError = true;
                 state.message = action.payload;
             })
+
+            // Delete
+
             .addCase(deleteGoal.pending, (state) => {
                 state.isLoading = true
             })
