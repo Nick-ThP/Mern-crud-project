@@ -27,6 +27,7 @@ const getGoals = async (token) => {
 }
 
 // Update goal
+
 const updateGoal= async (goalId, goalData, token) => {
     const config = {
         headers: {
@@ -35,7 +36,7 @@ const updateGoal= async (goalId, goalData, token) => {
     }
     const response = await axios.put(API_URL + "/" + goalId, goalData, config);
     return response.data;
-  };
+}
 
 // Delete user goal
 
