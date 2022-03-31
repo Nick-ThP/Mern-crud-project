@@ -25,20 +25,24 @@ const Header = () => {
             </div>
             <ul>
                 {user ? (
-                    <li>
+                    <li className='flex'>
                         <button className='btn' onClick={onLogout}>
-                            <FaSignOutAlt /> Logout
+                            <FaSignOutAlt /> Log out
                         </button> 
                     </li>
                 ) : (<>
-                    <li>
-                        <Link to='/login'>
-                            <FaSignInAlt /> Login
+                    <li >
+                        <Link to='/login' className='flex'>
+                            <button className='btn'>
+                                <FaSignInAlt /> Log in
+                            </button> 
                         </Link> 
                     </li>
                     <li>
-                        <Link to='/register'>
-                            <FaUser /> Register
+                        <Link to='/register' className='flex'>
+                            <button className='btn'>
+                                <FaUser /> Register
+                            </button> 
                         </Link> 
                     </li>
                 </>)}

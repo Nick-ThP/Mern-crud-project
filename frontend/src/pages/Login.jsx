@@ -52,10 +52,10 @@ const Login = () => {
     return (
         <>
             <section className="heading">
-                <h1>
-                    <FaSignInAlt /> Login
+                <h1 className='flex'>
+                    Log in
                 </h1>
-                <p>Login and start setting goals</p>
+                <p>Log in to pin your goals</p>
             </section>
             <section className="form">
                 <form onSubmit={onSubmit}>
