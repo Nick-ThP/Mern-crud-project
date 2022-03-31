@@ -20,7 +20,7 @@ const Header = () => {
         <header className='header'>
             <div className="logo">
                 <Link to='/'>
-                    GoalSetter
+                    Goal Catcher
                 </Link>
             </div>
             <ul>
