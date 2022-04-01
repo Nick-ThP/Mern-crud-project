@@ -57,6 +57,7 @@ h3 {
   padding: 20px 0;
   border-bottom: 1px solid black;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .header ul {
@@ -204,8 +205,8 @@ h3 {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
+.logo a {
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -241,6 +242,23 @@ h3 {
 }
 
 @media (max-width: 600px) {
+
+  .logo a {
+    font-size: 3rem;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header ul {
+    gap: 20px;
+  }
+
+  .header ul li {
+    margin-left: 0px;
+  }
+
   .form {
     width: 90%;
   }
