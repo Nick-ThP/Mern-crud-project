@@ -109,7 +109,7 @@ h3 {
 }
 
 .goal:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .goal h2 {
@@ -126,6 +126,11 @@ h3 {
   font-size: 1.2rem;
   font-weight: bold;
   opacity: 0.8;
+}
+
+.goal .close:hover {
+  opacity: 0.5;
+  
 }
 
 .date {
