@@ -62,7 +62,7 @@ const Register = () => {
                 <h1 className='flex'>
                     Register
                 </h1>
-                <p>Create an account to start</p>
+                <p>Create an account to get started</p>
             </section>
             <section className="form">
                 <form onSubmit={onSubmit}>
