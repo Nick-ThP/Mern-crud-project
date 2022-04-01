@@ -86,7 +86,7 @@ h3 {
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0 20px;
 }
 
@@ -245,6 +245,8 @@ h3 {
 
   .logo a {
     font-size: 3rem;
+    white-space: nowrap;
+    margin: 0 20px;
   }
 
   .header {
@@ -253,6 +255,7 @@ h3 {
 
   .header ul {
     gap: 20px;
+    margin: 0 20px;
   }
 
   .header ul li {
