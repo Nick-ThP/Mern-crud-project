@@ -10,7 +10,7 @@ const GoalItem = ({goal}) => {
     return (
         <div className="goal">
             <div className='date'>
-                {new Date(goal.createdAt).toLocaleString('en-US')}
+                {new Date(goal.createdAt).toLocaleString('en-GB', { timeZone: 'UTC' })}
             </div>
             <h2>{goal.text}</h2>
             <button onClick={() => dispatch(deleteGoal(goal._id))} className="close"><FaTimesCircle /></button>
