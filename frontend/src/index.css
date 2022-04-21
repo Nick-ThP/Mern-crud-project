@@ -10,7 +10,7 @@ body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
   background-color: antiquewhite;
-  background-image: url(../public/white-bed-sheet.png);
+  background-image: url(./images/white-bed-sheet.png);
 }
 
 a {
