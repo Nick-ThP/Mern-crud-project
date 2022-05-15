@@ -104,7 +104,7 @@ h3 {
 .goal {
   background-color: white;
   margin: 10px 0;
-  padding: 20px 15px 10px 15px;
+  padding: 20px 0 10px 0;
   position: relative;
   box-shadow: 1px 1px 3px black;
 }
@@ -279,5 +279,9 @@ h3 {
 
   .heading p {
     font-size: 1.5rem;
+  }
+
+  .goal {
+    padding: 20px 15px 10px 15px;
   }
 }
