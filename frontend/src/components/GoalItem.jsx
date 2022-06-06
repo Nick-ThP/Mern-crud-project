@@ -1,4 +1,4 @@
-import { FaTimesCircle} from 'react-icons/fa'
+import { FaTimesCircle } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
 import { deleteGoal } from '../features/goals/goalSlice'
 
